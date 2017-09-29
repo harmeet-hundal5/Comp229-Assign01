@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{523B086F-2481-4D3E-8B56-E3D130E003DF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Comp229_Assign01</RootNamespace>
+    <AssemblyName>Comp229-Assign01</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\default.css" />
+    <Content Include="Assets\font-awesome\css\font-awesome.css" />
+    <Content Include="Assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Assets\layout.css" />
+    <Content Include="Assets\media-queries.css" />
+    <Content Include="Multimedia\harmeet.jpg" />
+    <Content Include="Multimedia\header-background.jpg" />
+    <Content Include="Multimedia\logo_1.png" />
+    <Content Include="Web.config" />
+    <Content Include="default.aspx" />
+    <Content Include="resume.aspx" />
+    <Content Include="Contactpage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comp.Master.cs">
+      <DependentUpon>Comp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comp.Master.designer.cs">
+      <DependentUpon>Comp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resume.aspx.cs">
+      <DependentUpon>resume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resume.aspx.designer.cs">
+      <DependentUpon>resume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactpage.aspx.cs">
+      <DependentUpon>Contactpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactpage.aspx.designer.cs">
+      <DependentUpon>Contactpage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Comp.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\fonts\fontawesome-webfont.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\fonts\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\bordered-pulled.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\core.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\fixed-width.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\font-awesome.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\icons.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\larger.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\list.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\mixins.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\path.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\rotated-flipped.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\spinning.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\stacked.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\less\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_bordered-pulled.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_core.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_fixed-width.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_icons.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_larger.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_list.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_mixins.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_path.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_rotated-flipped.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_spinning.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_stacked.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\font-awesome\scss\font-awesome.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JavaScript\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1417/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
